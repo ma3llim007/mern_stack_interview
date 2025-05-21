@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detached DOM Elements</title>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        const container = document.getElementById("container");
+        const storedNodes = []
+
+        setInterval(() => {
+            const tempDiv = document.createElement("div");
+            tempDiv.textContent = "Leaked Div";
+
+            container.appendChild(tempDiv);
+            // Remove from DOM
+            container.removeChild(tempDiv);
+
+            // ❗ Memory leak: we're still holding a reference
+            // storedNodes.push(tempDiv);
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
