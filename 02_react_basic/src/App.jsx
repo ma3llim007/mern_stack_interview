@@ -4,6 +4,7 @@ import If from "./components/Conditional/If";
 import Logical from "./components/Conditional/Logical";
 import SwitchComponent from "./components/Conditional/Switch";
 import Ternary from "./components/Conditional/Ternary";
+import CounterTwo from "./components/Counter";
 import FunctionalComponent from "./components/FunctionalComponent";
 import StateAndProps from "./components/StateAndProps";
 
@@ -17,7 +18,8 @@ function App() {
             {/* <If isLoggedIn={true} /> */}
             {/* <Ternary isLoggedIn={true} /> */}
             {/* <Logical hasMessage={true}/> */}
-            <SwitchComponent status={"error"}/>
+            {/* <SwitchComponent status={"error"}/> */}
+            <CounterTwo />
         </div>
     );
 }
