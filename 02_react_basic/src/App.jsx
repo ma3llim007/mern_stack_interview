@@ -7,6 +7,7 @@ import Ternary from "./components/Conditional/Ternary";
 import CounterTwo from "./components/Counter";
 import FunctionalComponent from "./components/FunctionalComponent";
 import StateAndProps from "./components/StateAndProps";
+import UseEffectCom from "./components/useEffectCom";
 
 function App() {
     return (
@@ -19,7 +20,8 @@ function App() {
             {/* <Ternary isLoggedIn={true} /> */}
             {/* <Logical hasMessage={true}/> */}
             {/* <SwitchComponent status={"error"}/> */}
-            <CounterTwo />
+            {/* <CounterTwo /> */}
+            <UseEffectCom />
         </div>
     );
 }
