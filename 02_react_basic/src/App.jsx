@@ -6,6 +6,7 @@ import SwitchComponent from "./components/Conditional/Switch";
 import Ternary from "./components/Conditional/Ternary";
 import CounterTwo from "./components/Counter";
 import FunctionalComponent from "./components/FunctionalComponent";
+import ControllerComponents from "./components/HandlingForm/ControllerComponents";
 import StateAndProps from "./components/StateAndProps";
 import UseEffectCom from "./components/useEffectCom";
 
@@ -21,7 +22,8 @@ function App() {
             {/* <Logical hasMessage={true}/> */}
             {/* <SwitchComponent status={"error"}/> */}
             {/* <CounterTwo /> */}
-            <UseEffectCom />
+            {/* <UseEffectCom /> */}
+            <ControllerComponents />
         </div>
     );
 }
