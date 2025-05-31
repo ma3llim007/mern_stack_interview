@@ -8,6 +8,7 @@ import CounterTwo from "./components/Counter";
 import FunctionalComponent from "./components/FunctionalComponent";
 import ControllerComponents from "./components/HandlingForm/ControllerComponents";
 import FormikForm from "./components/HandlingForm/FormikForm";
+import ReactHookForm from "./components/HandlingForm/ReactHookForm";
 import UnControllerComponents from "./components/HandlingForm/UnControllerComponents";
 import StateAndProps from "./components/StateAndProps";
 import UseEffectCom from "./components/useEffectCom";
@@ -27,7 +28,8 @@ function App() {
             {/* <UseEffectCom /> */}
             {/* <ControllerComponents /> */}
             {/* <UnControllerComponents /> */}
-            <FormikForm />
+            {/* <FormikForm /> */}
+            <ReactHookForm />
         </div>
     );
 }
