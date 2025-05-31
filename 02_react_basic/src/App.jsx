@@ -7,6 +7,7 @@ import Ternary from "./components/Conditional/Ternary";
 import CounterTwo from "./components/Counter";
 import FunctionalComponent from "./components/FunctionalComponent";
 import ControllerComponents from "./components/HandlingForm/ControllerComponents";
+import UnControllerComponents from "./components/HandlingForm/UnControllerComponents";
 import StateAndProps from "./components/StateAndProps";
 import UseEffectCom from "./components/useEffectCom";
 
@@ -23,7 +24,8 @@ function App() {
             {/* <SwitchComponent status={"error"}/> */}
             {/* <CounterTwo /> */}
             {/* <UseEffectCom /> */}
-            <ControllerComponents />
+            {/* <ControllerComponents /> */}
+            <UnControllerComponents />
         </div>
     );
 }
