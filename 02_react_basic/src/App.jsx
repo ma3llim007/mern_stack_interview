@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./components/ClassComponents";
+import Timer from "./components/ClassComponentTwo";
 import If from "./components/Conditional/If";
 import Logical from "./components/Conditional/Logical";
 import SwitchComponent from "./components/Conditional/Switch";
@@ -29,7 +30,8 @@ function App() {
             {/* <ControllerComponents /> */}
             {/* <UnControllerComponents /> */}
             {/* <FormikForm /> */}
-            <ReactHookForm />
+            {/* <ReactHookForm /> */}
+            <Timer />
         </div>
     );
 }
