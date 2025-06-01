@@ -12,6 +12,7 @@ import FormikForm from "./components/HandlingForm/FormikForm";
 import ReactHookForm from "./components/HandlingForm/ReactHookForm";
 import UnControllerComponents from "./components/HandlingForm/UnControllerComponents";
 import StateAndProps from "./components/StateAndProps";
+import TimerWithUseEffect from "./components/TimerWithUseEffect";
 import UseEffectCom from "./components/useEffectCom";
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
             {/* <UnControllerComponents /> */}
             {/* <FormikForm /> */}
             {/* <ReactHookForm /> */}
-            <Timer />
+            {/* <Timer /> */}
+            <TimerWithUseEffect />
         </div>
     );
 }
