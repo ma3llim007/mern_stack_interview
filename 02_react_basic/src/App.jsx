@@ -1,10 +1,11 @@
 import "./App.css";
+import CleanUpAbortController from "./components/CleanUpAbortController";
 import UserList from "./components/UserList";
 
 function App() {
     return (
         <div className="card">
-            <UserList />
+            <CleanUpAbortController />
         </div>
     );
 }
