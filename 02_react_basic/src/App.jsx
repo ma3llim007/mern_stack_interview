@@ -1,10 +1,10 @@
 import "./App.css";
-import Parent from "./components/UnidirectionalDataFlow";
+import UserList from "./components/UserList";
 
 function App() {
     return (
         <div className="card">
-            <Parent />
+            <UserList />
         </div>
     );
 }
