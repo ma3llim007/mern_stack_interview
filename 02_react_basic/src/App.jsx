@@ -1,10 +1,10 @@
 import "./App.css";
-import ReactMemo from "./components/OptimizeRending/ReactMemo";
+import Parent from "./components/UnidirectionalDataFlow";
 
 function App() {
     return (
         <div className="card">
-            <ReactMemo name="John" />
+            <Parent />
         </div>
     );
 }
