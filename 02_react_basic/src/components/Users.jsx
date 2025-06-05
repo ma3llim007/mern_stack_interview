@@ -1,13 +1,19 @@
+import useFetch from "../hooks/useFetch";
+
 const Users = () => {
-    // https://dummyjson.com/users
+    const { data, error, loading } = useFetch("https://dummyjson.com/users");
+    
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error Loading User: {error.message}</p>;
+
     return (
         <>
             <h1>User Listing</h1>
-            {/* {users?.map((user) => (
+            {data?.users?.map((user) => (
                 <p key={user.id}>
                     {user.firstName} {user.lastName}
                 </p>
-            ))} */}
+            ))}
         </>
     );
 };
