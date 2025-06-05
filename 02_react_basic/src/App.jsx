@@ -1,12 +1,7 @@
-import "./App.css";
-import Users from "./components/Users";
+import TogggleMode from "./components/TogggleMode";
 
 function App() {
-    return (
-        <div className="card">
-            <Users />
-        </div>
-    );
+    return <TogggleMode />;
 }
 
 export default App;
