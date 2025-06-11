@@ -1,7 +1,7 @@
-import ExampleTwo from "./components/useRef/ExampleTwo";
+import ReactMemoWithCallBack from "./components/OptimizeRending/ReactMemoWithCallBack";
 
 function App() {
-    return <ExampleTwo />;
+    return <ReactMemoWithCallBack />;
 }
 
 export default App;
