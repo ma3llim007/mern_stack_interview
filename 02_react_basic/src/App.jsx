@@ -1,7 +1,7 @@
-import ReactMemoWithCallBack from "./components/OptimizeRending/ReactMemoWithCallBack";
+import LocalStorage from "./components/LocalStorage";
 
 function App() {
-    return <ReactMemoWithCallBack />;
+    return <LocalStorage />;
 }
 
 export default App;
