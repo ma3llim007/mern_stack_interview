@@ -1,7 +1,7 @@
-import LocalStorage from "./components/LocalStorage";
+import ReactRouter from "./components/ReactRouter/ReactRouter";
 
 function App() {
-    return <LocalStorage />;
+    return <ReactRouter />;
 }
 
 export default App;
