@@ -1,7 +1,7 @@
-import ReactRouter from "./components/ReactRouter/ReactRouter";
+import Form from "./components/ReactRouter/MultiPageForm/Form";
 
 function App() {
-    return <ReactRouter />;
+    return <Form />;
 }
 
 export default App;
