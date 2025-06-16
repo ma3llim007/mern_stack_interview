@@ -41,8 +41,26 @@ const routers = createBrowserRouter([
     },
 ]);
 
+// const ReactRouter = () => {
+//     return <RouterProvider router={routers} />;
+// };
+
+// With Another Syntax
 const ReactRouter = () => {
-    return <RouterProvider router={routers} />;
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="/about-us" element={<AboutUs />} />
+                    <Route path="/contact-us" element={<Contact />} />
+                    <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/blog-details/:blogSlug" element={<BlogDetails />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 };
 
 export default ReactRouter;
