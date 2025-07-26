@@ -1,0 +1,1 @@
+Implement a JWT-based login system with bcrypt for password hashing.
