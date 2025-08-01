@@ -4,6 +4,7 @@ import { Container, Typography } from "@mui/material";
 import store from "./store/store";
 import AddHabit from "./components/AddHabit";
 import HabitList from "./components/HabitList";
+import ExtraHabit from "./components/ExtraHabit";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 </Typography>
                 <AddHabit />
                 <HabitList />
+                <ExtraHabit />
             </Container>
         </Provider>
     );
