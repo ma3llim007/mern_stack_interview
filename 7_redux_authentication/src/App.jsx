@@ -1,8 +1,12 @@
+import { useSelector } from "react-redux";
+import Dashboard from "./components/Dashboard";
+
 function App() {
+    
     return (
-        <>
-            <h1 class="text-3xl font-bold underline"> Hello world! </h1>
-        </>
+        <main className="w-full h-screen bg-slate-950 text-white">
+            <Dashboard />
+        </main>
     );
 }
 
