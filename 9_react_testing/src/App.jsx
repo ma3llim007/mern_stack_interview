@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Input from "./components/Inputs";
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
         <section className="w-full h-screen bg-slate-900 text-white">
             <div className="container mx-auto px-2">
                 <h1 className="text-center text-2xl pt-16">First React Test Case</h1>
-                <Input />
+                <Button />
             </div>
         </section>
     );

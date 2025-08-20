@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import Input from "./Inputs";
 import { describe, expect, it } from "vitest";
+import Input from "../Inputs";
 
 describe("Input Component Test Suite", () => {
     it("should have input box", () => {
