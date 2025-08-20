@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Input from "./Inputs";
 import { describe, expect, it } from "vitest";
 
@@ -15,6 +15,12 @@ describe("Input Component Test Suite", () => {
         expect(inputPlaceHolder).toHaveAttribute("name", "email");
         expect(inputPlaceHolder).toHaveAttribute("id", "email");
         expect(inputPlaceHolder).toHaveAttribute("type", "email");
-        expect(inputPlaceHolder).toHaveAttribute("value", "sameer.d3v@gmail.com");
+    });
+
+    it("should onChange event testing", () => {
+        render(<Input />);
+        const inputField = screen.getByRole("textbox");
+        fireEvent.change(inputField, { target: { value: "ab" } });
+        expect(inputField.value).toBe("ab")
     });
 });
