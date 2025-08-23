@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import Button from "../Button";
 
-describe.only("Button Component Test Suite", () => {
+describe("Button Component Test Suite", () => {
     it("should click evnet target", () => {
         render(<Button />);
         const btn = screen.getByRole("button");
