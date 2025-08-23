@@ -5,6 +5,7 @@ const Input = () => {
     return (
         <div>
             <div className="relative mb-4">
+                <h2>{email}</h2>
                 <label htmlFor="email" className="leading-7 text-base">
                     Email
                 </label>
